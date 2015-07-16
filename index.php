@@ -355,110 +355,6 @@ include_once 'common.php';
                     </div>
 
                 </div>
-
-                <!--
-                <div class="col-lg-4 col-sm-6">
-                     <a href="" data-toggle="modal" data-target="#myModal4" class="portfolio-box">
-                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    <?php echo $lang['Section4-Image4-Con1']; ?>
-                                </div>
-                                <div class="project-name">
-                                   <?php echo $lang['Section4-Image4-Con2']; ?> 
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                     
-                    <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel" ><a href="#"><?php echo $lang['Image-Link4']; ?></a></h4>
-                            
-                          </div>
-                          <div class="modal-body">
-                            ...
-                          </div>
-                          
-                        </div>
-                      </div>
-                    </div>
-
-
- 
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="" data-toggle="modal" data-target="#myModal5" class="portfolio-box">
-                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    <?php echo $lang['Section4-Image5-Con1']; ?>
-                                </div>
-                                <div class="project-name">
-                                   <?php echo $lang['Section4-Image5-Con2']; ?> 
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                      
-                    <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel" ><a href="#"><?php echo $lang['Image-Link5']; ?></a></h4>
-                            
-                          </div>
-                          <div class="modal-body">
-                            ...
-                          </div>
-                          
-                        </div>
-                      </div>
-                    </div>
-
-
-
-                </div> 
-                
-                 <div class="col-lg-4 col-sm-6">
-                     <a href="" data-toggle="modal" data-target="#myModal6" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    <?php echo $lang['Section4-Image6-Con1']; ?>
-                                </div>
-                                <div class="project-name">
-                                   <?php echo $lang['Section4-Image6-Con2']; ?> 
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                      
-                    <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel" ><a href="#"><?php echo $lang['Image-Link6']; ?></a></h4>
-                            
-                          </div>
-                          <div class="modal-body">
-                            ...
-                          </div>
-                          
-                        </div>
-                      </div>
-                    </div> 
- -->
-
-
                 </div>
             </div>
         </div>
@@ -484,16 +380,14 @@ include_once 'common.php';
 
     <div >
         <div class="col-lg-6" >
-            <div id="map-canvas" style="width:400px;height:200px;"></div>
+            <div id="map-canvas" style="max-width:100%;height:300px;"></div>
         </div>
     </div> 
      
 
 <div class="container-fluid">
 <div class="col-lg-6" >
-    <form class="form-horizontal" action="sendmail.php" method="post" target="iframe_target" >
-    <!-- <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;">
-    </iframe> -->
+    <form class="form-horizontal" action="sendmail.php" method="post" target="iframe_target" >s
         <div class="form-group">
             <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
                 <div class="col-sm-10">
@@ -518,56 +412,55 @@ include_once 'common.php';
             </div>
         </div>
     </form>
+</div>
+</div>
+     
 
-</div>
-</div>
-     <section class="rg-bottom" id="footer" >
-        <div class="rg-container" >
-            <div class="rt-grid-6 rt-alpha" >
-                    <div class="custom">
-                        <p>
-                            <span class="q_social_icon_holder normal_social">
-                                <a href="https://plus.google.com/+SoftcontrolNet-IT-Peace-of-Mind" rel="publisher" target="_blank">
-                                    <em class="fa fa-google-plus fa-lg simple_social"></em>
-                                </a>
-                            </span>
-                            <span class="q_social_icon_holder normal_social">
-                                <a href="https://www.facebook.com/SoftControl.Net" target="_blank">
-                                    <em class="fa fa-facebook fa-lg simple_social"></em>
-                                </a>
-                            </span>
-                            <span class="q_social_icon_holder normal_social">
-                                <a href="https://twitter.com/softcontrol_net" rel="publisher" target="_blank">
-                                    <em class="fa fa-twitter fa-lg simple_social"></em>
-                                </a>
-                            </span>
-                            <span class="q_social_icon_holder normal_social">
-                                <a href="https://www.linkedin.com/company/softcontrol" rel="publisher" target="_blank">
-                                    <em class="fa fa-linkedin fa-lg simple_social"></em>
-                                </a>
-                            </span>
-                            <span class="q_social_icon_holder normal_social">
-                                <a href="http://www.youtube.com/user/softcontrolnet" rel="publisher" target="_blank">
-                                    <em class="fa fa-youtube fa-lg simple_social"></em>
-                                </a>
-                            </span>
-                        </p>
-                    </div>
-                
+    <div class="col-lg-6 rg-bottom">
+            <div class="custom">
+                <p>
+                    <span class="q_social_icon_holder normal_social">
+                        <a href="https://plus.google.com/+SoftcontrolNet-IT-Peace-of-Mind" rel="publisher" target="_blank">
+                            <em class="fa fa-google-plus fa-lg simple_social"></em>
+                        </a>
+                    </span>
+                    <span class="q_social_icon_holder normal_social">
+                        <a href="https://www.facebook.com/SoftControl.Net" target="_blank">
+                            <em class="fa fa-facebook fa-lg simple_social"></em>
+                        </a>
+                    </span>
+                    <span class="q_social_icon_holder normal_social">
+                        <a href="https://twitter.com/softcontrol_net" rel="publisher" target="_blank">
+                            <em class="fa fa-twitter fa-lg simple_social"></em>
+                        </a>
+                    </span>
+                    <span class="q_social_icon_holder normal_social">
+                        <a href="https://www.linkedin.com/company/softcontrol" rel="publisher" target="_blank">
+                            <em class="fa fa-linkedin fa-lg simple_social"></em>
+                        </a>
+                    </span>
+                    <span class="q_social_icon_holder normal_social">
+                        <a href="http://www.youtube.com/user/softcontrolnet" rel="publisher" target="_blank">
+                            <em class="fa fa-youtube fa-lg simple_social"></em>
+                        </a>
+                    </span>
+                </p>
             </div>
+    </div>
+
         
-            <div class="rt-grid-6 rt-omega">
-                 
-                    <div class="custom">
-                        <p>
-                        Copyright © 1993-2015 SoftControl.Net, Ltd. All Rights Reserved.
-                        </p>
-                    </div>
-                
-            </div>
-        </div>
 
-    </section>
+    <div class="col-lg-6 rg-bottom">
+        <div class="custom">
+            <p>
+                Copyright © 1993-2015 SoftControl.Net, Ltd. All Rights Reserved.
+            </p>
+        </div>
+        
+    </div>
+
+
+   
 
 
     <!-- jQuery -->
