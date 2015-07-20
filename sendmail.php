@@ -3,12 +3,12 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
-if(isset($_POST['submit']))
+if(!empty($email) && empty($_POST['username']))
 {
 	 
 	//script send email
 	$to = "k.panichakun@gmail.com";
-
+	
 	$subject = 'test';
 
 	$headers = "From: webmaster@example.com\r\n";

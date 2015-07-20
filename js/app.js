@@ -21,10 +21,10 @@ $(document).ready(function() {
 		//console.log($(form).attr('action'));
 		//Serialize the form data.
 		var formData = $(form).serialize();
-		
+		console.log(formData);
 		//Submit the forn useing AJAX.
 		$.ajax({
-			type: 'POST',
+			type: 'post',
 			url: $(form).attr('action'),
 			data: formData
 		}).done(function(response){
