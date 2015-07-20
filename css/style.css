@@ -75,3 +75,11 @@ body [class*="rt-grid"]{
     font-size: 25px;
     color: #fff;
 }
+.error{
+	font-size: 25px;
+	color: #ff0000;
+}
+.success{
+	font-size: 25px;
+	color: #5cc5c5;
+}

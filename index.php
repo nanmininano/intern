@@ -387,23 +387,31 @@ include_once 'common.php';
 
 <div class="container-fluid">
 <div class="col-lg-6" >
-    <form class="form-horizontal" action="sendmail.php" method="post" target="iframe_target" >s
+	<div id="success"></div>
+    <form id="form-contact" class="form-horizontal" action="sendmail.php" method="post">
+        <div class="form-group username hide">
+        	<input class="form-control" placeholder="username *" name="username" type="text">
+        </div>
         <div class="form-group">
             <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Name" value required pattern="^[^!@#$%&*+=]+$" maxlength="50"
+                  oninvalid="this.setCustomValidity('Please enter your name.')" 
+                  oninput="setCustomValidity('')">
                 </div>
         </div>
         <div class="form-group">
             <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
                 <div class="col-sm-10">
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" value required maxlength="100"
+                  oninvalid="this.setCustomValidity('Please enter a valid email address.')" 
+                  oninput="setCustomValidity('')">
                 </div>
         </div>
         <div class="form-group">
             <label for="inputPassword3" class="col-sm-2 control-label">Message</label>
                 <div class="col-sm-10">
-                <textarea class="form-control" rows="3" id="message" name="message" placeholder="Message" ></textarea>
+                <textarea class="form-control" rows="3" id="message" name="message" placeholder="Message" maxlength="500"></textarea>
             </div>
         </div>
         <div class="form-group">
@@ -476,6 +484,7 @@ include_once 'common.php';
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+    <script src="js/app.js"></script>
 
     
 

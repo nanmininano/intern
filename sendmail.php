@@ -44,15 +44,21 @@ if(isset($_POST['submit']))
 
 if (mail($to,$subject,$message,$headers)){
 
-echo "<script language=\"JavaScript\">";
-alert('Email Send');
-echo "</script>";
+// echo "<script language=\"JavaScript\">";
+// alert('Email Send');
+// echo "</script>";
+//Set a 200 (okay) response code.
+http_response_code(200);
+echo "Thank you! your message has been sent.";
 
 }else{
 
-echo "<script language=\"JavaScript\">";
-echo "alert('Email not send');";
-echo "</script>";
+// echo "<script language=\"JavaScript\">";
+// echo "alert('Email not send');";
+// echo "</script>";
+//Set a 500 (internal server error) response code.
+http_response_code(500);
+echo "Oops! someting went wrong and we couldn't send your message.";
 
 }
 
