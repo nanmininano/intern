@@ -17,7 +17,7 @@ $(document).ready(function() {
 		//console.log($(form).attr('action'));
 		//Serialize the form data.
 		var formData = $(form).serialize();
-		console.log(formData);
+		//console.log(formData);
 		//Submit the forn useing AJAX.
 		$.ajax({
 			type: 'post',
@@ -32,9 +32,11 @@ $(document).ready(function() {
 			$(formMessages).text(response);
 			
 			//Clear the form.
-			$('#name').val('');
+			/*$('#name').val('');
 			$('#email').val('');
-			$('#message').val('');
+                           $('#upload').val('');
+			$('#comments').val('');*/
+                        $(form).trigger('reset');
 		}).fail(function(data){
 			//Make sure that the formMessages div has the 'error' class.
 			$(formMessages).removeClass('success');
