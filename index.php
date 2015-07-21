@@ -276,15 +276,25 @@ include_once 'common.php';
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             <h4 class="modal-title" id="myModalLabel" ><a href="#"><?php echo $lang['Image-Link1']; ?></a></h4>
-                            
                           </div>
                           <div class="modal-body">
-                            ...
-                          </div>
+                                <?php echo $lang['Intern-content-1']; ?> 
+                        </div>
+
+                            <div class="js-video [vimeo, widescreen]">
+                                <iframe width="560" height="315" src="http://www.youtube.com/embed/wN3gueLT0D8?showinfo=0" 
+                                frameborder="0" allowfullscreen></iframe>
+                            </div>
+                          
                           
                         </div>
                       </div>
                     </div>
+
+
+
+                 
+                
                 </div>
 
 
@@ -310,7 +320,7 @@ include_once 'common.php';
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             <h4 class="modal-title" id="myModalLabel" ><a href="#"><?php echo $lang['Image-Link2']; ?></a></h4>
-                            
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/nXHvDDLiANA" frameborder="0" allowfullscreen></iframe>
                           </div>
                           <div class="modal-body">
                             ...
@@ -321,7 +331,7 @@ include_once 'common.php';
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-sm-6">
+              <div class="col-lg-4 col-sm-6">
                     <a href="" data-toggle="modal" data-target="#myModal3" class="portfolio-box">
                         <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -348,6 +358,7 @@ include_once 'common.php';
                           </div>
                           <div class="modal-body">
                             ...
+                             <?php echo $lang['Intern-content-1']; ?> 
                           </div>
                           
                         </div>
@@ -355,6 +366,118 @@ include_once 'common.php';
                     </div>
 
                 </div>
+
+
+
+
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="" data-toggle="modal" data-target="#myModal4" class="portfolio-box">
+                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    <?php echo $lang['Section4-Image4-Con1']; ?>
+                                </div>
+                                <div class="project-name">
+                                   <?php echo $lang['Section4-Image4-Con2']; ?> 
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+
+                      <!-- Modal -->
+                    <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel" ><a href="#"><?php echo $lang['Image-Link4']; ?></a></h4>
+                            
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="" data-toggle="modal" data-target="#myModal5" class="portfolio-box">
+                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    <?php echo $lang['Section4-Image5-Con1']; ?>
+                                </div>
+                                <div class="project-name">
+                                   <?php echo $lang['Section4-Image5-Con2']; ?> 
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+
+                      <!-- Modal -->
+                    <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel" ><a href="#"><?php echo $lang['Image-Link5']; ?></a></h4>
+                            
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="" data-toggle="modal" data-target="#myModal6" class="portfolio-box">
+                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    <?php echo $lang['Section4-Image6-Con1']; ?>
+                                </div>
+                                <div class="project-name">
+                                   <?php echo $lang['Section4-Image6-Con2']; ?> 
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+
+                      <!-- Modal -->
+                    <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel" ><a href="#"><?php echo $lang['Image-Link6']; ?></a></h4>
+                            
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+
+
+
+
                 </div>
             </div>
         </div>
@@ -369,62 +492,70 @@ include_once 'common.php';
         </div>
     </aside> -->
 
-    <section id="contact">
-        <div class="header-content">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Contact Us</h2>
-                <hr class="primary">
-            </div>
+<section id="contact">
+    <div class="header-content">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Contact Us</h2>
+            <hr class="primary">
         </div>
-    </section>
+    </div>
+</section>
+
 
     <div >
-        <div class="col-lg-6" >
+        <div class="col-lg-6" style="padding-top: 10px;">
             <div id="map-canvas" style="max-width:100%;height:300px;"></div>
         </div>
     </div> 
-     
 
-<div class="container-fluid">
-<div class="col-lg-6" >
-	<div id="success"></div>
-    <form id="form-contact" class="form-horizontal" action="sendmail.php" method="post">
-        <div class="form-group username hide">
-        	<input class="form-control" placeholder="username *" name="username" type="text">
-        </div>
-        <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Name" value required pattern="^[^!@#$%&*+=]+$" maxlength="50"
-                  oninvalid="this.setCustomValidity('Please enter your name.')" 
-                  oninput="setCustomValidity('')">
-                </div>
-        </div>
-        <div class="form-group">
-            <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" value required maxlength="100"
-                  oninvalid="this.setCustomValidity('Please enter a valid email address.')" 
-                  oninput="setCustomValidity('')">
-                </div>
-        </div>
-        <div class="form-group">
-            <label for="inputPassword3" class="col-sm-2 control-label">Message</label>
-                <div class="col-sm-10">
-                <textarea class="form-control" rows="3" id="message" name="message" placeholder="Message" maxlength="500"></textarea>
+    <div class="col-lg-6" >
+        <div id="success"></div>
+        <form id="form-contact" class="form-horizontal" action="sendmail.php" method="post" enctype="multipart/form-data">
+            <div class="form-group username hide">
+                <input class="form-control" placeholder="username *" name="username" type="text">
             </div>
-        </div>
-        <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10" style="padding-bottom: 100px; ">
-                <button type="submit" class="btn btn-primary" id="submit" name="submit"  style ="width : 25%;" >Send</button>
-            </div>
-        </div>
-    </form>
-</div>
-</div>
-     
 
-    <div class="col-lg-6 rg-bottom">
+            <div class="form-group" style="padding-top: 10px;">
+                <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Name" value required pattern="^[^!@#$%&*+=]+$" maxlength="50"
+                        oninvalid="this.setCustomValidity('Please enter your name.')" 
+                        oninput="setCustomValidity('')">
+                    </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Email" value required maxlength="100"
+                        oninvalid="this.setCustomValidity('Please enter a valid email address.')" 
+                        oninput="setCustomValidity('')">
+                    </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Upload</label>
+                    <div class="col-sm-10">
+                    <input id="upload" name="upload" type="file" class="file" >
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Message</label>
+                    <div class="col-sm-10">
+                    <textarea class="email-field"  rows="3" id="comments" name="comments" placeholder="Message" ></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10" style="padding-bottom: 100px; ">
+                    <button type="submit" class="btn btn-primary" id="submit" name="submit"  style ="width : 25%;" >Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+     
+<div id="rt-copyright">
+    <div class="rt-container">
+        <div class="col-md-6 rg-bottom">
             <div class="custom">
                 <p>
                     <span class="q_social_icon_holder normal_social">
@@ -454,19 +585,17 @@ include_once 'common.php';
                     </span>
                 </p>
             </div>
-    </div>
-
-        
-
-    <div class="col-lg-6 rg-bottom">
-        <div class="custom">
-            <p>
-                Copyright © 1993-2015 SoftControl.Net, Ltd. All Rights Reserved.
-            </p>
         </div>
-        
-    </div>
 
+        <div class="col-md-6 rg-bottom">
+            <div class="custom">
+                <p>
+                    Copyright © 1993-2015 SoftControl.Net, Ltd. All Rights Reserved.
+                </p>
+            </div> 
+        </div>
+    </div>
+</div>
 
    
 
@@ -484,8 +613,7 @@ include_once 'common.php';
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
-    <script src="js/app.js"></script>
-
+     <script src="js/app.js"></script>
     
 
 </body>

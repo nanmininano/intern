@@ -56,8 +56,8 @@ $lang['Section4-Image4-Con1'] = "Category";
 $lang['Section4-Image4-Con2'] = "Project Name";
 $lang['Section4-Image5-Con1'] = "Category";
 $lang['Section4-Image5-Con2'] = "Project Name";
-$lang['Section4-Image6-Con1'] = "Category";
-$lang['Section4-Image6-Con2'] = "Project Name";
+$lang['Section4-Image6-Con1'] = "อันที่6";
+$lang['Section4-Image6-Con2'] = "โปรเจึ";
 
 $lang['Image-Link1'] = 'Content Image 1';
 $lang['Image-Link2'] = 'Content Image 2';

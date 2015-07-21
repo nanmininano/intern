@@ -1,7 +1,3 @@
-/**
- * 
- */
-
 $(document).ready(function() {
 	if ($(".username").length > 0) {
 		$(".username").addClass("hide")
@@ -55,5 +51,3 @@ $(document).ready(function() {
 		
 	})
 });
-
-

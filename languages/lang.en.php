@@ -63,7 +63,10 @@ $lang['Image-Link4'] = 'Content Image 4';
 $lang['Image-Link5'] = 'Content Image 5';
 $lang['Image-Link6'] = 'Content Image 6';
 
+$lang['Intern-content-1'] = "I interned at Soft Control Ltd. during the summer of my second year of university and gained many beneficial experiences during my time there. At the time I was working towards a Bachelor’s degree in Computer Science at New York University and wanted to gain some experience in software and web application development. I ended up interning at Soft Control for about two months. During my time there, I discovered that the most important that is involved in developing any software or web application is the teamwork that is required. At Soft Control, or any other software company, you are seldom working alone on a project. Learning how to work in a team is extremely important and it is often not something you get to experience in a university setting where most projects require you to work on your own. Before starting my internship at Soft Control, I was fluent in languages such as Java, C and Python. I got to build up my skills in these programming languages and also learned new ones that are required for web development such as rest API, PHP, HTML, CSS, JavaScript and JQuery, which deals with both server-side and client-side in the web development process. Some of the projects that I contributed to during my internship included Git Hooks, Slack API and Integrations and building a Customer Dashboard, which is a web application that allows customers to view and update the status and issues of their projects the team is currently working on without the hassle of exchanging multiple emails. Lastly, I got to meet many great people here at Soft Control who are always willing to help out whenever you need and are continuously assigning interesting projects that keep you busy. These assignments are often challenging, requires creativity and allows you to gain useful experiences for the future. 
+</br>-Adisa Narula 
 
+";
 
 
 ?>

@@ -1,75 +1,58 @@
 <?php
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
-
-if(!empty($email) && empty($_POST['username']))
+if($_POST)
 {
-	 
-	//script send email
-	$to = "k.panichakun@gmail.com";
-	
-	$subject = 'test';
+    $to_Email       = "k.panichakun@gmail.com"; //change email receiver at here
 
-	$headers = "From: webmaster@example.com\r\n";
-	$headers .= "Reply-To: webmaster@example.com\r\n";
-	$headers .= "CC: susan@example.com\r\n";
-	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-Type: text/html; charset=utf-8\r\n";
 
-	$message =
-	'<html>
-	<head>
-		<title></title>
-	</head>
-	<body>
 
-		<table rules="all" style="border : 1px solid black;" cellpadding="10" >
-	<tr>
-		<td>Name</td>
-		<td>'. $name . '</td>
-	</tr>
-	<tr>
-		<td>E-mail</td>
-		<td>'. $email . '</td>
-	</tr>
-	<tr>
-		<td>Message</td>
-		<td>'. $message . '</td>
-	</tr>
+    $subject        = 'Test Send Email'; //Subject line for emails
+   
+   
+    
+   
+    //check $_POST vars are set, exit if any missing
+    if(!isset($_POST["name"]) || !isset($_POST["email"]) || !isset($_POST["comments"]))
+    {
+        $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
+        die($output);
+    }
 
-	</table>
-	</body>
-	</html>';
+    $sid = md5(uniqid(time()));
+    
+    $headers = 'From:'. $_POST['name'].'<'.trim($_POST['email']).'>' . "\r\n" ;
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: multipart/mixed; boundary=\"".$sid."\"\r\n";
+    $headers .= "This is a multi-part message in MIME format.\r\n";
+    $body .= "--".$sid."\r\n";
+    $body .= "Content-type: text/plain; charset=UTF-8\r\n"; // or UTF-8 //
+    $body .= "Content-Transfer-Encoding: 8bit\n\n";
+    $body .= "Contact From: " . trim($_POST['email']) . "\r\n";
+    $body .= "---------------------------------------------------------------------\r\n";
+    $body .= "Name: " . $_POST['name'] . "\r\n";
+    $body .= "E-mail: " . trim($_POST['email']) . "\r\n";
+    $body .= "---------------------------------------------------------------------\r\n";
+    $body .= "Comment: " . nl2br($_POST["comments"]) . "\r\n";
 
-if (mail($to,$subject,$message,$headers)){
 
-// echo "<script language=\"JavaScript\">";
-// alert('Email Send');
-// echo "</script>";
-//Set a 200 (okay) response code.
-http_response_code(200);
-echo "Thank you! your message has been sent.";
-
-}else{
-
-// echo "<script language=\"JavaScript\">";
-// echo "alert('Email not send');";
-// echo "</script>";
-//Set a 500 (internal server error) response code.
-http_response_code(500);
-echo "Oops! someting went wrong and we couldn't send your message.";
-
+     if($_FILES["upload"]["name"] != "")
+    {
+        $strFilesName = $_FILES["upload"]["name"];
+        $strContent = chunk_split(base64_encode(file_get_contents($_FILES["upload"]["tmp_name"]))); 
+        $body .= "--".$sid."\n";
+        $body .= "Content-Type: application/octet-stream; name=\"".$strFilesName."\"\n"; 
+        $body .= "Content-Transfer-Encoding: base64\n";
+        $body .= "Content-Disposition: attachment; filename=\"".$strFilesName."\"\n\n";
+        $body .= $strContent."\n\n";
+    }
+   
+    if(mail($to_Email, $subject, $body, $headers))
+    {
+        http_response_code(200);
+        echo "Thank you! your message has been sent.";
+    }else{
+        http_response_code(500);
+        echo "Oops! someting went wrong and we couldn't send your message.";
+        
+    }
 }
-
-
-
-
-}
-
-
-
-?> 
-
-
-
+?>
