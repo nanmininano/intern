@@ -534,7 +534,7 @@ include_once 'common.php';
             <div class="form-group">
                 <label for="inputPassword3" class="col-sm-2 control-label">Upload</label>
                 <div class="col-sm-10">
-                    <input id="upload" name="upload" type="file" class="file" >
+                    <input id="upload" name="upload" type="file" class="file">
                 </div>
             </div>
             <div class="form-group">
@@ -544,7 +544,7 @@ include_once 'common.php';
                 </div>
             </div>
             <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10" style="padding-bottom: 100px; ">
+                <div class="col-sm-offset-2 col-sm-10" style="padding-bottom: 100px;">
                     <button type="submit" class="btn btn-primary" id="submit" name="submit"  style ="width : 25%;" >Send</button>
                 </div>
             </div>

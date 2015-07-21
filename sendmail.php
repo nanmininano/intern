@@ -32,7 +32,6 @@ if (filter_input_array(INPUT_POST)) {
     $body .= "---------------------------------------------------------------------\r\n";
     $body .= "Comment: " . nl2br($comments) . "\r\n";
 
-
     if ($_FILES["upload"]["name"] != "") {
         $strFilesName = $_FILES["upload"]["name"];
         $strContent = chunk_split(base64_encode(file_get_contents($_FILES["upload"]["tmp_name"])));

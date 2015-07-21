@@ -16,13 +16,19 @@ $(document).ready(function() {
 		//alert($(form).attr('action'));
 		//console.log($(form).attr('action'));
 		//Serialize the form data.
-		var formData = $(form).serialize();
+		//var formData = $(form).serialize();
+                var formData = new FormData(this);
+                
 		//console.log(formData);
 		//Submit the forn useing AJAX.
 		$.ajax({
 			type: 'post',
 			url: $(form).attr('action'),
-			data: formData
+			data: formData,
+                        async: false,
+                        cache: false,
+                        processData: false,
+                        contentType: false
 		}).done(function(response){
 			//Make sure that the formMessages div has the 'success' class.
 			$(formMessages).removeClass('error');
